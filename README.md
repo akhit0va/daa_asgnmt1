@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Design and Analysis of Algorithms – Assignment
 
 ## Learning Goals
@@ -88,3 +89,6 @@
 The theoretical analysis (Master Theorem, Akra–Bazzi) matched the measured results.  
 Minor differences came from constant factors and JVM details.  
 Overall, the assignment helped me understand how to balance **theory** with **real-world performance**.
+=======
+# daa_asgnmt1
+>>>>>>> 45449f89db1391081641e885017ae1b194fcd78a
