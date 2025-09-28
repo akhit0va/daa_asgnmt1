@@ -1,0 +1,18 @@
+# Пример git-последовательности (копируй в терминал):
+git init
+git add .
+git commit -m "init: maven, junit, readme"
+git checkout -b feature/metrics
+# добавить метрики
+git add src/main/java/alg/metrics && git commit -m "feat(metrics): counters, depth tracker, CSV writer"
+git checkout -b feature/mergesort
+git add src/main/java/alg/mergesort && git commit -m "feat(mergesort): buffer + cutoff + tests"
+git checkout -b feature/quicksort
+git add src/main/java/alg/quicksort && git commit -m "feat(quicksort): randomized pivot, recurse-on-smaller"
+git checkout -b feature/select
+git add src/main/java/alg/select && git commit -m "feat(select): deterministic select (MoM5) + tests"
+git checkout -b feature/closest
+git add src/main/java/alg/closest && git commit -m "feat(closest): closest pair D&C"
+git checkout main
+git merge --no-ff feature/metrics -m "merge: add metrics"
+git tag v1.0
